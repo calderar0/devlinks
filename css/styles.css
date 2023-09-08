@@ -4,14 +4,29 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: white;
+    --bg-url: url(./images/bg-mobile.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.50);
+    --surface-color: rgba(255, 255, 255, 0.10);
+}
+
+.light {
+    --text-color: black;
+    --bg-url: url(./images/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.50);
+    --surface-color: rgba(0, 0, 0, 0.05);
+}
+
 body {
     /*background: color url repeat position/size;*/
-    background: url(./images/bg-mobile.jpg) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
 }
+
 
 body * {
     font-family: 'Inter', sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 #container { 
@@ -50,8 +65,8 @@ ul li a {
     align-items: center;
     justify-content: center;
     padding: 1rem 1.5rem;
-    background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.10));
-    border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.50));
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
     border-radius: 0.5rem;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -62,7 +77,7 @@ ul li a {
 
 ul li a:hover {
     background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid white;
+    border: 1.5px solid var(--text-color);
 }
 
 #social-links {
@@ -84,4 +99,10 @@ ul li a:hover {
 #social-links a:hover{
     background-color: rgba(255, 255, 255, 0.2);
     padding: 1rem;
+}
+
+footer {
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
 }
