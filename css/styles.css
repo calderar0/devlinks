@@ -12,6 +12,7 @@
     --surface-color-hover: rgba(255, 255, 255, 0.05);
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(./images/moon-stars.svg);
+    --src-img: url(./images/Avatar.png)
 }
 
 .light {
@@ -22,6 +23,7 @@
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
     --switch-bg-url: url(./images/sun.svg);
+    --src-img: url(./images/avatar2.png)
 }
 
 body {
@@ -54,6 +56,7 @@ body * {
     width: 7rem;
     margin: auto;
     overflow: hidden;
+    content: var(--src-img);
 }
 
 #profile p {
