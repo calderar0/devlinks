@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +14,13 @@
     <!-- main content -->
     <div id="container">
         <div id="profile">
-            <img src="./css/images/Avatar.png" alt="Foto de perfil a ser definida pelo usuário">
+            <img src="./css/images/Avatar.png" alt="Foto de perfil a ser definida pelo usuário" id="user">
             <p>@usersocial</p>
         </div>
         <!-- dark/light switch -->
-        <div id="switch">
-            <button>
-                
-            </button>
-            <span>
-
-            </span>
+        <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
         </div>
         <!-- links to add -->
         <ul>
@@ -64,5 +60,6 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
