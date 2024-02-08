@@ -53,10 +53,10 @@ body * {
 }
 
 #profile img {
+    content: var(--src-img);
     width: 7rem;
     margin: auto;
     overflow: hidden;
-    content: var(--src-img);
 }
 
 #profile p {
